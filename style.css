@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+:root {
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  --light-color: rgb(224, 224, 224);
+  --dark-color: #1c1a2f;
+  --primary-color: #f49910;
+}
+
+html {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--light-color);
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  background: var(--light-color);
+  justify-content: space-between;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 5px;
+  color: var(--dark-color);
+  margin: 0;
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  cursor: pointer;
+  color: var(--dark-color);
+}
+
+.menu p:hover {
+  color: var(--primary-color);
+}
+
+.hero {
+  background: var(--light-color);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.hero-container {
+  padding: 50px;
+  color: var(--dark-color);
+  padding-left: 0;
+  margin: 0;
+}
+
+.hero-text {
+  font-size: 50px;
+}
+
+.best {
+  color: var(--primary-color);
+}
+
+.hero-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+img {
+  object-fit: contain;
+  height: auto;
+  width: 80%;
+}
+
+/* CSS */
+.button-style {
+  background-color: var(--dark-color);
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6b7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.button-style:hover {
+  background-color: #374151;
+}
+
+.button-style:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-style {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+.features {
+  margin: auto;
+  padding-bottom: 50px;
+  background: #ffffff;
+  width: 100%;
+}
+
+.features-text h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.image {
+  width: 210px;
+  height: 210px;
+  border: 5px solid var(--light-color);
+  border-radius: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 100px;
+}
+
+.feature-card p {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 0;
+  flex: 1;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quote-section {
+  background: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.quote p {
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 600;
+  font-family: Inter;
+}
+
+.quote b {
+  text-align: end;
+  padding-top: 0;
+  font-size: 25px;
+  padding-left: 100px;
+}
+
+.newsletter {
+  background: #ffffff;
+  display: flex;
+
+  padding: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary-color);
+  padding: 40px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.newsletter-text {
+  color: var(--dark-color);
+  margin: 0;
+}
+
+.signup {
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  color: var(--dark-color);
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6b7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.signup:hover {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.signup:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .signup {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.svg {
+  object-fit: cover;
+  height: 30px;
+  width: 30px;
+}
