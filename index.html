@@ -11,18 +11,25 @@
   </head>
   <body>
     <main class="main-container">
-      <nav class="navbar">
-        <div class="logo">
-          <h1 class="logo-text">LOGO</h1>
-        </div>
-        <div class="menu">
-          <p>Menu1</p>
-          <p>Menu2</p>
-          <p>Menu3</p>
-        </div>
-      </nav>
+      <header>
+        <nav class="navbar">
+          <div class="logo">
+            <h1 class="logo-text">LOGO</h1>
+          </div>
+          <div class="menu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#newsletter" class="nav-link">Join Us</a>
+          </div>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
 
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="hero-container">
           <h1 class="hero-text">
             Welcome to the <span class="best">BEST</span> Online Security on the
@@ -35,7 +42,7 @@
         </div>
       </section>
 
-      <section class="features">
+      <section class="features" id="features">
         <div class="features-text">
           <h1>Features We Offer</h1>
         </div>
@@ -74,7 +81,7 @@
         </div>
       </section>
 
-      <section class="newsletter">
+      <section class="newsletter" id="newsletter">
         <div class="newsletter-items">
           <div class="newsletter-text">
             <h2>NewsLetter SignUp</h2>
